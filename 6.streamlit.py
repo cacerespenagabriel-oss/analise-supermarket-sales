@@ -61,7 +61,7 @@ if selected_page == "Página Inicial":
 elif selected_page == "Vendas":
     st.title('📈 Métricas de Vendas')
     st.markdown('''##### Para uma melhor noção a respeito dos dados, confira o DataSet completo abaixo:''')
-    st.dataframe(df, use_container_width=True)
+    st.dataframe(df1, use_container_width=True)
     st.markdown('##### Vamos Responder a Perguntas de Negócios relacionados a Vendas:')
     st.markdown('''
 1. Qual é o total de receita (gross income) gerado por cada filial (Branch)?
@@ -162,7 +162,7 @@ elif selected_page == "Vendas":
 elif selected_page == "Clientes":
     st.title('👤 Métricas sobre Comportamento do Cliente')
     st.markdown('''##### Para uma melhor noção a respeito dos dados, confira o DataSet completo abaixo:''')
-    st.dataframe(df, use_container_width=True)
+    st.dataframe(df1, use_container_width=True)
     st.markdown('##### Vamos Responder a Perguntas de Negócios relacionados ao comportamento do cliente:')
     st.markdown('''
 1. Qual gênero (Gender) mais compra em cada filial?
@@ -303,7 +303,7 @@ elif selected_page == "Clientes":
 elif selected_page == "Satisfação":
     st.title('⭐ Métricas sobre satisfação do cliente')
     st.markdown('''##### Para uma melhor noção a respeito dos dados, confira o DataSet completo abaixo:''')
-    st.dataframe(df, use_container_width=True)
+    st.dataframe(df1, use_container_width=True)
     st.markdown('##### Vamos Responder a Perguntas de Negócios relacionados a satisfação do cliente:')
     st.markdown('''
 1. Qual é a média geral de avaliação (`Rating`)?
@@ -350,7 +350,7 @@ elif selected_page == "Satisfação":
 elif selected_page == "Impostos e Lucros":
     st.title('💸 Impostos e Lucros')
     st.markdown('''##### Para uma melhor noção a respeito dos dados, confira o DataSet completo abaixo:''')
-    st.dataframe(df, use_container_width=True)
+    st.dataframe(df1, use_container_width=True)
     st.markdown('##### Vamos Responder a Perguntas de Negócios relacionados a impostos e lucros:')
     st.markdown('''
 1. Qual é o total de imposto (`Tax 5%`) recolhido por cidade?
