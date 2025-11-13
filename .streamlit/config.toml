@@ -1,0 +1,5 @@
+[server]
+# Define o locale para UTF-8, que é geralmente bem suportado
+# Isto força o ambiente a usar uma configuração de idioma padrão
+enableCORS = true
+enableXsrfProtection = true
