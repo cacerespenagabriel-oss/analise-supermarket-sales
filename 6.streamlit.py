@@ -10,6 +10,8 @@ df = pd.read_excel('supermarket_sales.xlsx')
 df1 = df.copy()
 
 df1['Date'] = pd.to_datetime(df1['Date'], errors='coerce')
+df1['Dia_Semana'] = df1['Date'].dt.day_name()
+df1['Mes'] = df1['Date'].dt.month_name()
 df1['Date'] = df1['Date'].dt.date
 
 plt.style.use('dark_background')
